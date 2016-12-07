@@ -1,0 +1,8 @@
+package net.routee.messaging;
+
+public class Callback {
+
+	private String callbackUrl;
+	private String callbackStrategy;
+	
+}

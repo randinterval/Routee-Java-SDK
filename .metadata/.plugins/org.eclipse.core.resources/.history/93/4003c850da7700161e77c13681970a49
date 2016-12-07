@@ -1,0 +1,11 @@
+package net.routee.messaging;
+
+import java.util.ArrayList;
+
+import net.routee.contacts.Contact;
+
+public class Campaign {
+  Callback callback;
+  ArrayList<Contact> contacts;
+
+}

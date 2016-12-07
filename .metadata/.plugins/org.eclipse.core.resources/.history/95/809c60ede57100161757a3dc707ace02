@@ -1,0 +1,109 @@
+package net.routee.contacts;
+
+import java.util.ArrayList;
+
+public class Contact {
+
+  private ArrayList<Label> labels;
+  private ArrayList <Group> groups;
+  private String email;
+  private String firstName;
+  private String lastName;
+  private String mobile;
+  private boolean vip;
+
+  
+  
+  Contact() {
+
+  }
+
+  public void addLabel(Label label) {
+    if (this.labels == null) {
+      this.labels = new ArrayList<Label>();
+    }
+    this.labels.add(label);
+  }
+  
+  public void addGroup(Group group){
+    if(this.groups==null){
+      this.groups = new ArrayList<Group>();
+    }
+    this.groups.add(group);
+  }
+
+
+  public ArrayList<Label> getLabels() {
+    return labels;
+  }
+
+  public void setLabels(ArrayList<Label> labels) {
+    this.labels = labels;
+  }
+
+  public String getEmail() {
+    return email;
+  }
+
+  public void setEmail(String email) {
+    this.email = email;
+  }
+
+  public String getFirstName() {
+    return firstName;
+  }
+
+  public void setFirstName(String firstName) {
+    this.firstName = firstName;
+  }
+
+  public String getLastName() {
+    return lastName;
+  }
+
+  public void setLastName(String lastName) {
+    this.lastName = lastName;
+  }
+
+  public String getMobile() {
+    return mobile;
+  }
+
+  public void setMobile(String mobile) {
+    this.mobile = mobile;
+  }
+
+  public boolean isVip() {
+    return vip;
+  }
+
+  public void setVip(boolean vip) {
+    this.vip = vip;
+  }
+
+
+
+  public ArrayList <Group> getGroups() {
+    return groups;
+  }
+
+
+
+  public void setGroups(ArrayList <Group> groups) {
+    this.groups = groups;
+  }
+
+  PUBLIC CONTACT(ARRAYLIST<LABEL> LABELS, ARRAYLIST<GROUP> GROUPS, STRING EMAIL, STRING FIRSTNAME,
+      STRING LASTNAME, STRING MOBILE, BOOLEAN VIP) {
+    SUPER();
+    THIS.LABELS = LABELS;
+    THIS.GROUPS = GROUPS;
+    THIS.EMAIL = EMAIL;
+    THIS.FIRSTNAME = FIRSTNAME;
+    THIS.LASTNAME = LASTNAME;
+    THIS.MOBILE = MOBILE;
+    THIS.VIP = VIP;
+  }
+
+
+}

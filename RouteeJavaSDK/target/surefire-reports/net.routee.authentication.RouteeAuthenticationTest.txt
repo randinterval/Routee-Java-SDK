@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: net.routee.authentication.RouteeAuthenticationTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 2, Errors: 1, Skipped: 0, Time elapsed: 8.139 sec <<< FAILURE! - in net.routee.authentication.RouteeAuthenticationTest
+testMultipleScope(net.routee.authentication.RouteeAuthenticationTest)  Time elapsed: 2.021 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at net.routee.authentication.RouteeAuthenticationTest.testMultipleScope(RouteeAuthenticationTest.java:79)
+
+testValidCredentails(net.routee.authentication.RouteeAuthenticationTest)  Time elapsed: 1.204 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at net.routee.authentication.RouteeAuthenticationTest.testValidCredentails(RouteeAuthenticationTest.java:28)
+
+testTokenObject(net.routee.authentication.RouteeAuthenticationTest)  Time elapsed: 1.245 sec  <<< ERROR!
+net.routee.authentication.RouteeAuthenticationException: Unauthorized Bad credentials
+	at net.routee.authentication.RouteeAuthentication.getTokenObject(RouteeAuthentication.java:232)
+	at net.routee.authentication.RouteeAuthenticationTest.testTokenObject(RouteeAuthenticationTest.java:105)
+

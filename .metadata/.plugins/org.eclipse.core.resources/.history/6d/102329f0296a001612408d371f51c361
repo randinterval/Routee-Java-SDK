@@ -1,0 +1,21 @@
+package net.routee.messaging;
+
+public class Message {
+
+	String from;
+	String body;
+	String to;
+	boolean flash;
+	String label;
+	Callback callback;
+	
+	public Message(String from,String body,String to){
+		this.from = from;
+		this.body = body;
+		this.to = to;
+	}
+	
+	public Message(String from, String body, String to,boolean flash,String label,Callback callback)
+	
+	
+}

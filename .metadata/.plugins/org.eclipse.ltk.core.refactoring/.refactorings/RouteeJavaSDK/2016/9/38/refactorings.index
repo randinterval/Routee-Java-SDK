@@ -1,0 +1,9 @@
+1473663488317	Encapsulate field 'cost'
+1473663496462	Encapsulate field 'totalMessages'
+1473665576547	Rename type 'SingleMessageAnalysisResult'
+1473665596656	Rename type 'SingleSmsResult'
+1473665612786	Rename type 'SendCampaignResult'
+1473667744419	Rename type 'SendCampaignResponse'
+1473673013250	Encapsulate field 'smsInformation'
+1473677491078	Delete element
+1474019544903	Delete element

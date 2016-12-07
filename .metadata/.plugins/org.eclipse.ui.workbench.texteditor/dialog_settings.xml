@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="Configuration.DEFAULT_BASE_URL" key="selection"/>
+		<item value="true" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="DEFAULT_BASE_URL"/>
+			<item value="DEFAULT_BASE_URL_WITHOUT_PROTOCOL"/>
+			<item value="&quot;connect.routee.net&quot;"/>
+			<item value="    urlBuilder.host(Configuration.DEFAULT_BASE_URL_WITHOUT_PROTOCOL);&#x0A;"/>
+			<item value="host"/>
+			<item value="gist\"/>
+			<item value="trackMultiple"/>
+			<item value="track"/>
+		</list>
+		<list key="replacehistory">
+			<item value="Configuration.DEFAULT_BASE_URL"/>
+			<item value="Configuration.DEFAULT_BASE_URL_WITHOUT_PROTOCOL"/>
+			<item value="DEFAULT_BASE_URL_WITHOUT_PROTOCOL"/>
+			<item value="Configuration.D"/>
+			<item value="Configuration."/>
+			<item value="  /** The Constant DEFAULT_BASE_URL. */&#x0A;"/>
+			<item value="C"/>
+			<item value="this."/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="338" key="DIALOG_WIDTH"/>
+		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="434" key="DIALOG_HEIGHT"/>
+		<item value="1164" key="DIALOG_X_ORIGIN"/>
+		<item value="165" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

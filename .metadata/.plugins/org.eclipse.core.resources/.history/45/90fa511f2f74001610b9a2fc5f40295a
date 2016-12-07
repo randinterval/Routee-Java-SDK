@@ -1,0 +1,10 @@
+package net.routee.contacts;
+
+public class RouteeContactsClient {
+  
+  Contact createContact(Contact contact)
+  {
+    return contact;
+  }
+  
+}

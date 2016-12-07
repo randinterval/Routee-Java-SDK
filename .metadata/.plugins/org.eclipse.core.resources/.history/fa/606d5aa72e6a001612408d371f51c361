@@ -1,0 +1,23 @@
+package net.routee.messaging;
+
+import net.routee.authentication.RouteeAuthentication;
+import net.routee.authentication.Token;
+
+public class RouteeSmsClient {
+
+	
+    public static final String DEFAULT_BASE_URL = "https://connect.routee.net";
+    public static final String ENDPOINT_SINGLESMS = "/sms";
+    public static final String ENDPOINT_ANALYZESMS = "/sms/analyze";
+    public static final String ENDPOINT_SENDCAMPAIGN = "/sms/campaign";
+    public static final String ENDPOINT_ANALYZECAMPAIGN = "/sms/analyze/campaign";
+    public static final String ENDPOINT_TRACKSMS = "/sms/tracking/single/";
+    public static final String 
+	
+	private RouteeAuthentication auth = null;
+
+    private Token oauthToken;
+
+	
+	
+}

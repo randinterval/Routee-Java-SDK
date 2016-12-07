@@ -1,0 +1,15 @@
+package net.routee.contacts;
+
+public class RouteeContactsException extends Exception {
+  
+
+  * 
+  */
+ private static final long serialVersionUID = 1L;
+
+  RouteeContactsException(String message) {
+   super(message);
+ }
+
+
+}

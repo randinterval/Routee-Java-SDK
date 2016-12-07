@@ -1,0 +1,34 @@
+package net.routee.messaging;
+
+import java.util.ArrayList;
+
+public class Reminder {
+  
+  private int minutesAfter;
+  private int minutesBefore;
+  private ArrayList<String>to;
+  
+  public Reminder(){
+    
+  }
+  
+  public int getMinutesAfter() {
+    return minutesAfter;
+  }
+  public void setMinutesAfter(int minutesAfter) {
+    this.minutesAfter = minutesAfter;
+  }
+  public int getMinutesBefore() {
+    return minutesBefore;
+  }
+  public void setMinutesBefore(int minutesBefore) {
+    this.minutesBefore = minutesBefore;
+  }
+  public ArrayList<String> getTo() {
+    return to;
+  }
+  public void setTo(ArrayList<String> to) {
+    this.to = to;
+  }
+  
+}

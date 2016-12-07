@@ -1,0 +1,81 @@
+package net.routee.messaging;
+
+import java.io.IOException;
+
+import org.json.JSONObject;
+
+import net.routee.authentication.RouteeAuthentication;
+import net.routee.authentication.RouteeAuthenticationException;
+import okhttp3.MediaType;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
+
+public class RouteeSmsClient {
+
+
+  public static final String DEFAULT_BASE_URL = "https://connect.routee.net";
+  public static final String ENDPOINT_SMS = "/sms";
+  public static final String ENDPOINT_ANALYZESMS = "/sms/analyze";
+  public static final String ENDPOINT_SENDCAMPAIGN = "/sms/campaign";
+  public static final String ENDPOINT_ANALYZECAMPAIGN = "/sms/analyze/campaign";
+  public static final String ENDPOINT_TRACKSMS = "/sms/tracking/single/";
+  public static final String ENDPOINT_TRACKMULTIPLESMS = "/sms/tracking/campaign/";
+  public static final String ENDPOINT_TRACKMULTIPLESMSFILTER = "/sms/tracking";
+  public static final String ENDPOINT_RETCOUNTRIESQUIETHOURS = "/sms/quietHours/countries/";
+
+  private RouteeAuthentication auth = null;
+  private OkHttpClient httpClient = null;
+
+  public RouteeSmsClient(final String applicationId, final String applicationSecret) {
+    this.auth = new RouteeAuthentication(applicationId, applicationSecret);
+  }
+
+  public RouteeSmsClient(RouteeAuthentication auth) {
+    this.auth = auth;
+  }
+
+  public void sendSingleSms(Message message) throws RouteeAuthenticationException, RouteeMessagingException, IOException {
+    if(this.httpClient==null)
+      this.httpClient = new OkHttpClient();
+    MediaType mediaType = MediaType.parse("application/json");
+    RequestBody body = null;
+    JSONObject jsonBody = new JSONObject();
+    jsonBody.put("from", message.getFrom());
+    jsonBody.put("body",message.getBody());
+    jsonBody.put("to", message.getTo());
+    if(message.isFlash()){
+      jsonBody.put("flash", true);
+    }
+    if(message.getLabel()!=null){
+      jsonBody.put("label", message.getLabel());
+    }
+    if(message.getCallback()!=null){
+      JSONObject callbackJson = new JSONObject();
+      Callback callback = message.getCallback();
+      callbackJson.put("url", callback.getCallbackUrl());
+      callbackJson.put("strategy", callback.getCallbackStrategy());
+      jsonBody.put("callback", callbackJson);
+    }
+    body = RequestBody.create(mediaType,jsonBody.toString());
+    System.out.println(jsonBody.toString());
+      Request request = new Request.Builder()
+          .url("https://connect.routee.net/sms")
+          .post(body)
+          .addHeader("authorization", "Bearer "+this.auth.getToken())
+          .addHeader("content-type", "application/json")
+          .build();
+    Response response = httpClient.newCall(request).execute();
+    int responseCode = response.code();
+    if(responseCode==400)
+    {
+      throw new RouteeMessagingException(response.body().string());
+    }
+
+    System.out.println(response.body().string());
+  }
+
+
+
+}

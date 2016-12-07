@@ -1,0 +1,111 @@
+package net.routee.messaging;
+
+public class SmsResult {
+
+
+  private String trackingId;
+  private String createdAt;
+  private String from;
+  private String to;
+  private String body;
+  private String status;
+  private String label;
+  private bodyAnalysis analysis;
+  private boolean flash;
+  private Callback callback;
+
+  public SmsResult(String trackingId, String createdAt, String from, String to, String body,
+      String status, String label, bodyAnalysis analysis, boolean flash, Callback callback) {
+    super();
+    this.trackingId = trackingId;
+    this.createdAt = createdAt;
+    this.from = from;
+    this.to = to;
+    this.body = body;
+    this.status = status;
+    this.label = label;
+    this.analysis = analysis;
+    this.flash = flash;
+    this.callback = callback;
+  }
+
+  public String getTrackingId() {
+    return trackingId;
+  }
+
+  public void setTrackingId(String trackingId) {
+    this.trackingId = trackingId;
+  }
+
+  public String getCreatedAt() {
+    return createdAt;
+  }
+
+  public void setCreatedAt(String createdAt) {
+    this.createdAt = createdAt;
+  }
+
+  public String getFrom() {
+    return from;
+  }
+
+  public void setFrom(String from) {
+    this.from = from;
+  }
+
+  public String getTo() {
+    return to;
+  }
+
+  public void setTo(String to) {
+    this.to = to;
+  }
+
+  public String getBody() {
+    return body;
+  }
+
+  public void setBody(String body) {
+    this.body = body;
+  }
+
+  public String getStatus() {
+    return status;
+  }
+
+  public void setStatus(String status) {
+    this.status = status;
+  }
+
+  public String getLabel() {
+    return label;
+  }
+
+  public void setLabel(String label) {
+    this.label = label;
+  }
+
+  public bodyAnalysis getAnalysis() {
+    return analysis;
+  }
+
+  public void setAnalysis(bodyAnalysis analysis) {
+    this.analysis = analysis;
+  }
+
+  public boolean isFlash() {
+    return flash;
+  }
+
+  public void setFlash(boolean flash) {
+    this.flash = flash;
+  }
+
+  public Callback getCallback() {
+    return callback;
+  }
+
+  public void setCallback(Callback callback) {
+    this.callback = callback;
+  }
+}

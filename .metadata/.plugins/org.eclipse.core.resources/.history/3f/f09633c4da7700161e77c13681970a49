@@ -1,0 +1,8 @@
+package net.routee.messaging;
+
+public class Reminder {
+  
+  private int minutesAfter;
+  private int minutesBefore;
+  ArrayList<String>to;
+}

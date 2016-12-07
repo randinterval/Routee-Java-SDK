@@ -1,0 +1,5 @@
+package net.routee.contacts;
+
+public class Filter {
+  private String fieldName;
+}

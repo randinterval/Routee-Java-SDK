@@ -1,0 +1,300 @@
+package net.routee.contacts;
+
+import java.util.ArrayList;
+
+/**
+ * The Class Contact.
+ */
+public class Contact {
+
+  /** Contains the contact's labels with their respective values. */
+  private ArrayList<Label> labels;
+
+  /** All contact groups (tags) that this contact belongs to. */
+  private ArrayList<Group> groups;
+
+  /** The contact id. */
+  private String contactId;
+
+  /** The email. */
+  private String email;
+
+  /** The first name. */
+  private String firstName;
+
+  /** The last name. */
+  private String lastName;
+
+  /** The mobile. */
+  private String mobile;
+
+  /** The country. */
+  private String country;
+
+  /** The vip. */
+  private boolean vip;
+
+  /** The blacklisted services. */
+  private ArrayList<String> blacklistedServices;
+
+  /**
+   * Instantiates a new contact.
+   *
+   * @param labels the labels
+   * @param groups the groups
+   * @param contactId the contact id
+   * @param email the email
+   * @param firstName the first name
+   * @param lastName the last name
+   * @param mobile the mobile
+   * @param vip the vip
+   * @param country the country
+   */
+  public Contact(ArrayList<Label> labels, ArrayList<Group> groups, String contactId, String email,
+      String firstName, String lastName, String mobile, boolean vip, String country) {
+    this.setContactId(contactId);
+    this.labels = labels;
+    this.groups = groups;
+    this.email = email;
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.mobile = mobile;
+    this.vip = vip;
+    this.country = country;
+  }
+
+
+  /**
+   * Instantiates a new contact.
+   */
+  public Contact() {
+
+  }
+
+  /**
+   * Adds the label.
+   *
+   * @param label the label
+   */
+  public void addLabel(Label label) {
+    if (this.labels == null) {
+      this.labels = new ArrayList<Label>();
+    }
+    this.labels.add(label);
+  }
+
+  /**
+   * Adds the group.
+   *
+   * @param group the group
+   */
+  public void addGroup(Group group) {
+    if (this.groups == null) {
+      this.groups = new ArrayList<Group>();
+    }
+    this.groups.add(group);
+  }
+
+
+  /**
+   * Gets the labels.
+   *
+   * @return the labels
+   */
+  public ArrayList<Label> getLabels() {
+    return labels;
+  }
+
+  /**
+   * Sets the labels.
+   *
+   * @param labels the new labels
+   */
+  public void setLabels(ArrayList<Label> labels) {
+    this.labels = labels;
+  }
+
+  /**
+   * Gets the email.
+   *
+   * @return the email
+   */
+  public String getEmail() {
+    return email;
+  }
+
+  /**
+   * Sets the email.
+   *
+   * @param email the new email
+   */
+  public void setEmail(String email) {
+    this.email = email;
+  }
+
+  /**
+   * Gets the first name.
+   *
+   * @return the first name
+   */
+  public String getFirstName() {
+    return firstName;
+  }
+
+  /**
+   * Sets the first name.
+   *
+   * @param firstName the new first name
+   */
+  public void setFirstName(String firstName) {
+    this.firstName = firstName;
+  }
+
+  /**
+   * Gets the last name.
+   *
+   * @return the last name
+   */
+  public String getLastName() {
+    return lastName;
+  }
+
+  /**
+   * Sets the last name.
+   *
+   * @param lastName the new last name
+   */
+  public void setLastName(String lastName) {
+    this.lastName = lastName;
+  }
+
+  /**
+   * Gets the mobile.
+   *
+   * @return the mobile
+   */
+  public String getMobile() {
+    return mobile;
+  }
+
+  /**
+   * Sets the mobile.
+   *
+   * @param mobile the new mobile
+   */
+  public void setMobile(String mobile) {
+    this.mobile = mobile;
+  }
+
+  /**
+   * Checks if is vip.
+   *
+   * @return true, if is vip
+   */
+  public boolean isVip() {
+    return vip;
+  }
+
+  /**
+   * Sets the vip.
+   *
+   * @param vip the new vip
+   */
+  public void setVip(boolean vip) {
+    this.vip = vip;
+  }
+
+
+
+  /**
+   * Gets the groups.
+   *
+   * @return the groups
+   */
+  public ArrayList<Group> getGroups() {
+    return groups;
+  }
+
+
+
+  /**
+   * Sets the groups.
+   *
+   * @param groups the new groups
+   */
+  public void setGroups(ArrayList<Group> groups) {
+    this.groups = groups;
+  }
+
+
+  /**
+   * Gets the contact id.
+   *
+   * @return the contact id
+   */
+  public String getContactId() {
+    return contactId;
+  }
+
+
+  /**
+   * Sets the contact id.
+   *
+   * @param contactId the new contact id
+   */
+  public void setContactId(String contactId) {
+    this.contactId = contactId;
+  }
+
+  /**
+   * Gets the country.
+   *
+   * @return the country
+   */
+  public String getCountry() {
+    return country;
+  }
+
+
+  /**
+   * Sets the country.
+   *
+   * @param country the new country
+   */
+  public void setCountry(String country) {
+    this.country = country;
+  }
+
+
+  /**
+   * Gets the blacklisted services.
+   *
+   * @return the blacklisted services
+   */
+  public ArrayList<String> getBlacklistedServices() {
+    return blacklistedServices;
+  }
+
+
+  /**
+   * Sets the blacklisted services.
+   *
+   * @param blacklistedServices the new blacklisted services
+   */
+  public void setBlacklistedServices(ArrayList<String> blacklistedServices) {
+    this.blacklistedServices = blacklistedServices;
+  }
+
+  /**
+   * Adds the blacklisted service.
+   *
+   * @param service the service
+   */
+  public void addBlacklistedService(String service) {
+    if (this.blacklistedServices == null) {
+      this.blacklistedServices = new ArrayList<String>();
+    }
+    this.blacklistedServices.add(service);
+  }
+
+}

@@ -1,0 +1,34 @@
+package net.routee.reports;
+
+import java.util.ArrayList;
+
+public class VolumePriceSummaryAnalyticsResponse {
+
+  private ArrayList<VolumePriceSummaryAnaltics> report;
+
+ 
+  public VolumePriceSummaryAnalyticsResponse(ArrayList<VolumePriceSummaryAnaltics> report) {
+    this.report = report;
+  }
+
+  public VolumePriceSummaryAnalyticsResponse(){
+    this.report = new ArrayList<VolumePriceSummaryAnaltics>();
+  }
+  
+  public ArrayList<VolumePriceSummaryAnaltics> getReport() {
+    return report;
+  }
+
+  public void setReport(ArrayList<VolumePriceSummaryAnaltics> report) {
+    this.report = report;
+  }
+  
+  public addReport(VolumePriceSummaryAnaltics report){
+    if(this.report==null){
+      this.report = new ArrayList<VolumePriceSummaryAnaltics>();
+    }
+  }
+
+  
+
+}

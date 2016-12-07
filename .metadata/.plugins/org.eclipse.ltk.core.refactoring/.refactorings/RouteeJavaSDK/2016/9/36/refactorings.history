@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;net.routee.contacts.Contact.groups&apos; in &apos;net.routee.contacts.Contact&apos;&#x0A;- Original project: &apos;RouteeJavaSDK&apos;&#x0A;- Original element: &apos;net.routee.contacts.Contact.groups&apos;&#x0A;- Getter method name: &apos;getGroups&apos;&#x0A;- Setter method name: &apos;setGroups&apos;&#x0A;- Field visibility: &apos;public&apos;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;groups&apos;" flags="589830" getter="getGroups" id="org.eclipse.jdt.ui.self.encapsulate" input="/src\/main\/java&lt;net.routee.contacts{Contact.java[Contact^groups" insertion="14" setter="setGroups" stamp="1472914192276" version="1.0" visibility="1"/>
+</session>

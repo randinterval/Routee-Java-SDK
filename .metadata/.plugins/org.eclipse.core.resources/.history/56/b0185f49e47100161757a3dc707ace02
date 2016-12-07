@@ -1,0 +1,9 @@
+package net.routee.contacts;
+
+public class Group {
+  
+  private String name;
+  private String strategy;
+  private ArrayList <Filter> filters;
+
+}

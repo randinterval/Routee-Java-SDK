@@ -1,0 +1,29 @@
+package net.routee.contacts;
+
+public class Filter {
+  
+  public Filter(String fieldName, String searchTerm) {
+    this.fieldName = fieldName;
+    this.searchTerm = searchTerm;
+  }
+  
+  public Filter(){
+    
+  }
+  
+  private String fieldName;
+  private String searchTerm;
+  
+  public String getFieldName() {
+    return fieldName;
+  }
+  public void setFieldName(String fieldName) {
+    this.fieldName = fieldName;
+  }
+  public String getSearchTerm() {
+    return searchTerm;
+  }
+  public void setSearchTerm(String searchTerm) {
+    this.searchTerm = searchTerm;
+  }
+}

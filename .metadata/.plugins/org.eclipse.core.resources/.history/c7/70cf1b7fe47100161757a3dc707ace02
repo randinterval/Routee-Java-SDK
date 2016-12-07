@@ -1,0 +1,50 @@
+package net.routee.contacts;
+
+import java.util.ArrayList;
+
+public class Group {
+  
+  private String name;
+  private String strategy;
+  private ArrayList <Filter> filters;
+  
+  public Group(String name, String strategy, ArrayList<Filter> filters) {
+    this.name = name;
+    this.strategy = strategy;
+    this.filters = filters;
+  }
+
+
+  Group(){
+    this.filters = new ArrayList<Filter>();
+  }
+  
+  
+  public String getName() {
+    return name;
+  }
+  public void setName(String name) {
+    this.name = name;
+  }
+  public String getStrategy() {
+    return strategy;
+  }
+  public void setStrategy(String strategy) {
+    this.strategy = strategy;
+  }
+  public ArrayList<Filter> getFilters() {
+    return filters;
+  }
+  public void setFilters(ArrayList<Filter> filters) {
+    this.filters = filters;
+  }
+  
+  public void addFilter(Filter filter){
+    if(this.filters==null){
+      this.filters = new ArrayList<Filter>();
+    }
+    
+  }
+  
+
+}

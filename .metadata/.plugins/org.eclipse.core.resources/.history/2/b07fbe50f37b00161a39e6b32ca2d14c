@@ -1,0 +1,61 @@
+import java.io.IOException;
+
+import net.routee.authentication.RouteeAuthentication;
+import net.routee.authentication.RouteeAuthenticationException;
+import net.routee.contacts.RouteeContactsException;
+import net.routee.messaging.Message;
+import net.routee.messaging.RouteeMessagingClient;
+import net.routee.messaging.RouteeMessagingException;
+
+public class Test {
+
+  public static void main(String[] args)
+      throws RouteeAuthenticationException, IOException, RouteeContactsException, RouteeMessagingException {
+
+    /*
+     * I want to get authorized with application credentials, create a contact with custom labels
+     * (first create the labels (one text label and one numeric label) and then use them for the
+     * creation of the contact), create a new group and add this contact to the group.
+     */
+
+    // 1) First for authorization, we create Routee Authentication Instance by providing our
+    // application id, and secret.
+
+    // Replace Application ID, and Secret with your Routee Account Credentials
+    String APPLICATION_ID = "57d40cabe4b0464b9119ba59";
+    String APPLICATION_SECRET = "KZrjjtAh5q";
+    RouteeAuthentication auth = new RouteeAuthentication(APPLICATION_ID, APPLICATION_SECRET);
+   
+    
+    // We Use getToken method to authorize with Routee and get back the oAuth2 Token.
+    // Let's print the oAuthToken that we get back from Routee
+    System.out.println(auth.getToken());
+    
+    //Send a Single Message to a Mobile and to amdTelecom
+    
+    //To do that we create two Message Instances and set up the attributes
+    Message msgToMobile = new Message();
+    Message msgToAmdTelecom = new Message();
+    
+    msgToMobile.setFrom("Test");
+    msgToMobile.setTo("+923114641533");
+    msgToMobile.setBody("Hello World - This is a test");
+    
+    
+    msgToAmdTelecom.setFrom("Test");
+    msgToAmdTelecom.setTo("amdTelecom");
+    msgToAmdTelecom.setBody("Hello World - This is a test");
+    
+    
+    // Now we Use Routee Messaging Client to send Messages - 
+    //We construct an instance of Routee Message Client
+    // and pass it our RouteeAuthenitcation instance so it can use it for authorization
+    RouteeMessagingClient contactsClient = new RouteeMessagingClient(auth);
+    
+    //Now send both Messages
+    contactsClient.sendSingleSms(msgToMobile);
+    contactsClient.sendSingleSms(msgToAmdTelecom);
+    
+  }
+  
+}
