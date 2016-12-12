@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;RouteeJavaSDK&apos;" deleteContents="false" description="Delete resource &apos;RouteeJavaSDK&apos;" element1="/RouteeJavaSDK" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1474880934789"/>
-</session>

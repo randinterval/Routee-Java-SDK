@@ -1,8 +1,0 @@
-package net.routee.messaging;
-
-public class Fallback {
-  
-  private String name;
-  private String value;
-  
-}

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;net.routee.messaging.SmsResult&apos; to &apos;SingleSmsResult&apos;&#x0A;- Original project: &apos;RouteeJavaSDK&apos;&#x0A;- Original element: &apos;net.routee.messaging.SmsResult&apos;&#x0A;- Renamed element: &apos;net.routee.messaging.SingleSmsResult&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;SmsResult&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;net.routee.messaging{SmsResult.java[SmsResult" matchStrategy="1" name="SingleSmsResult" qualified="false" references="true" similarDeclarations="false" stamp="1472382625348" textual="false" version="1.0"/>
-</session>
