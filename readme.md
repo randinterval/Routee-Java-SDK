@@ -1,5 +1,7 @@
 # Routee Java SDK       
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c6241f5aec5940a895a2d4ca6df79b52)](https://www.codacy.com/app/randinterval/Routee-Java-SDK?utm_source=github.com&utm_medium=referral&utm_content=randinterval/Routee-Java-SDK&utm_campaign=badger)
+
 Routee JAVA SDK provides the necessary classes to communicate with Routee Services. It currently supports all of the services offered by the Routee:
 
   - Messaging
