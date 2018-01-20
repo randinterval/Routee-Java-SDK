@@ -1,6 +1,8 @@
-# Routee Java SDK       
+# Routee Java SDK      
 
-Routee JAVA SDK provides the necessary classes to communicate with Routee Services. It currently supports all of the services offered by the Routee:
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f722206bcb70415198f40964277a0184)](https://www.codacy.com/app/randinterval/Routee-Java-SDK?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=randinterval/Routee-Java-SDK&amp;utm_campaign=Badge_Grade) [![Coverage Status](https://coveralls.io/repos/github/randinterval/Routee-Java-SDK/badge.svg?branch=master)](https://coveralls.io/github/randinterval/Routee-Java-SDK?branch=master)
+
+Routee JAVA SDK provides the necessary classes to communicate with Routee Services in Java. It currently supports all of the services offered by the Routee:
 
   - Messaging
   - Accounts
@@ -21,9 +23,9 @@ Routee Java SDK uses a number of open source projects to work properly:
 
 You can either build the jar from source or use the existing jar included in the repository  (RouteeJavaSDK.jar). 
 
-To use the jar, simply include the jar file into your project, and add it to your build path. Than simply export the classes that you want to use.
+To use the jar, simply include the jar file into your project, and add it to your build path. You'd then need to export the classes that you want to use.
 
-To Build from Source:
+### To Build from Source:
 
 We use Maven build system, you can generate jar by using the following commands:
 
@@ -37,10 +39,13 @@ First command is used to get all the dependencies for the project (OKHttp,JSON,J
 
 ### Testing
 
-The sdk has been thoroughly tested. To run the tests, simply type
+Unit Tests have been written in JUnit for the SDK. To run the tests, simply type
 ```sh
 $ mvn tests
 ```
-Please note that, you need to setup test environment prior to running the tests - You can do so my modifying the src/test/java/net/routee/TestConfiguraiton.Java File.
+Please note that, you need to setup test environment variables  to run the tests - You can do so my modifying src/test/java/net/routee/TestConfiguraiton.Java
 
+### Contributing
+
+I would love to have your helping hand on Routee Java SDK! I have followed [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html), so if you're interesting in contributing please follow the style guide :)
 
