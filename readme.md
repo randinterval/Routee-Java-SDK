@@ -49,3 +49,5 @@ Please note that, you need to setup test environment variables  to run the tests
 
 I would love to have your helping hand on Routee Java SDK! I have followed [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html), so if you're interesting in contributing please follow the style guide :)
 
+### Documentation
+Documentation for the SDK is available at [Routee Java SDK Documentation Repo](https://github.com/randinterval/Routee-Java-SDK-Docs)
