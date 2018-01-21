@@ -1,8 +1,6 @@
 # Routee Java SDK      
 
-[![Join the chat at https://gitter.im/randinterval/Routee-Java-SDK](https://badges.gitter.im/randinterval/Routee-Java-SDK.svg)](https://gitter.im/randinterval/Routee-Java-SDK?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f722206bcb70415198f40964277a0184)](https://www.codacy.com/app/randinterval/Routee-Java-SDK?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=randinterval/Routee-Java-SDK&amp;utm_campaign=Badge_Grade) [![Coverage Status](https://coveralls.io/repos/github/randinterval/Routee-Java-SDK/badge.svg?branch=master)](https://coveralls.io/github/randinterval/Routee-Java-SDK?branch=master)
+[![Join the chat at https://gitter.im/randinterval/Routee-Java-SDK](https://badges.gitter.im/randinterval/Routee-Java-SDK.svg)](https://gitter.im/randinterval/Routee-Java-SDK?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f722206bcb70415198f40964277a0184)](https://www.codacy.com/app/randinterval/Routee-Java-SDK?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=randinterval/Routee-Java-SDK&amp;utm_campaign=Badge_Grade) [![Coverage Status](https://coveralls.io/repos/github/randinterval/Routee-Java-SDK/badge.svg?branch=master)](https://coveralls.io/github/randinterval/Routee-Java-SDK?branch=master)
 
 Routee JAVA SDK provides the necessary classes to communicate with Routee Services in Java. It currently supports all of the services offered by the Routee:
 
