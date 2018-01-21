@@ -43,11 +43,14 @@ Unit Tests have been written in JUnit for the SDK. To run the tests, simply type
 ```sh
 $ mvn tests
 ```
-Please note that, you need to setup test environment variables  to run the tests - You can do so my modifying src/test/java/net/routee/TestConfiguraiton.Java
+
+You'll need to setup the test environment variables to run the test suite. You can do som by modifying src/test/java/net/routee/TestConfiguraiton.Java file.
+
 
 ### Contributing
 
 I would love to have your helping hand on Routee Java SDK! I have followed [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html), so please follow the Style Guide if you're interested in contributing to the project :)
 
 ### Documentation
+
 Documentation for the SDK is available at [Routee Java SDK Documentation Repo](https://github.com/randinterval/Routee-Java-SDK-Docs)
