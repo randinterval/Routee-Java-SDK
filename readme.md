@@ -44,7 +44,7 @@ Unit Tests have been written in JUnit for the SDK. To run the tests, simply type
 $ mvn tests
 ```
 
-You'll need to setup the test environment variables to run the test suite. You can do som by modifying src/test/java/net/routee/TestConfiguraiton.Java file.
+You'll need to setup the test environment variables to run the test suite. You can do so by modifying src/test/java/net/routee/TestConfiguraiton.Java file.
 
 
 ### Contributing
