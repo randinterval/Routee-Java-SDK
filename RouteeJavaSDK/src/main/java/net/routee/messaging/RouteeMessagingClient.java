@@ -308,6 +308,8 @@ public class RouteeMessagingClient {
         new Request.Builder().url(Configuration.DEFAULT_BASE_URL + ENDPOINT_CAMPAIGN + trackingId)
             .get().addHeader("authorization", "Bearer " + this.auth.getToken())
             .addHeader("content-type", "application/json").build();
+    if (this.httpClient == null)
+      this.httpClient = new OkHttpClient();
     Response response = httpClient.newCall(request).execute();
     int responseCode = response.code();
     if (responseCode != 200) {
